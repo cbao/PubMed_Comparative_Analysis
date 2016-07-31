@@ -1,0 +1,77 @@
+1. Sri Lanka : 110.4
+2. Colombia : 57.09
+3. Indonesia : 40.06
+4. Cuba : 31.58
+5. Puerto Rico : 29.49
+6. Thailand : 21.35
+7. Singapore : 20.11
+8. Malaysia : 10.64
+9. Bangladesh : 8.800
+10. Venezuela : 8.787
+11. Pakistan : 8.452
+12. Ghana : 3.559
+13. India : 3.023
+14. Mexico : 2.580
+15. Brazil : 2.567
+16. Australia : 2.356
+17. Taiwan : 2.106
+18. Argentina : 1.919
+19. Saudi Arabia : 1.837
+20. France : 1.624
+21. Ethiopia : 1.404
+22. Uruguay : 1.344
+23. Cameroon : 1.260
+24. Belgium : 0.999
+25. United Kingdom : 0.949
+26. Hong Kong : 0.920
+27. Austria : 0.908
+28. Netherlands : 0.886
+29. Georgia : 0.824
+30. United States : 0.819
+31. Switzerland : 0.813
+32. Portugal : 0.731
+33. Greece : 0.554
+34. Tunisia : 0.479
+35. Sweden : 0.469
+36. South Africa : 0.435
+37. Morocco : 0.415
+38. Croatia : 0.408
+39. Germany : 0.386
+40. Nigeria : 0.381
+41. Italy : 0.336
+42. Jordan : 0.316
+43. Finland : 0.316
+44. Norway : 0.301
+45. China : 0.297
+46. Israel : 0.284
+47. Canada : 0.279
+48. Chile : 0.269
+49. Japan : 0.267
+50. New Zealand : 0.241
+51. Egypt : 0.240
+52. Spain : 0.237
+53. South Korea : 0.203
+54. Denmark : 0.149
+55. Czech Republic : 0.135
+56. Romania : 0.135
+57. Slovakia : 0.114
+58. Serbia : 0.108
+59. Russia : 0.090
+60. Ireland : 0.084
+61. Poland : 0.084
+62. Iran : 0.066
+63. Kuwait : 0.042
+64. Turkey : 0.023
+65. United Arab Emirates : 0.0
+66. Ukraine : 0.0
+67. Slovenia : 0.0
+68. Lithuania : 0.0
+69. Lebanon : 0.0
+70. Latvia : 0.0
+71. Hungary : 0.0
+72. Estonia : 0.0
+73. Bulgaria : 0.0
+74. Bosnia and Herzegovina : 0.0
+75. Belarus : 0.0
+76. Armenia : 0.0
+77. Algeria : 0.0
