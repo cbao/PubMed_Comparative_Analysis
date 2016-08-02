@@ -122,7 +122,7 @@ Looking at the Wikipedia article for [Dengue Fever Outbreaks] (https://en.wikipe
 
 # Discussion
 ## Comments
-This purpose of this project has been to serve as a demonstration of the value of comparative analysis in determining how invested a country might be in researching a specific disease. The analysis of Dengue Fever has produced results that one would expect from a disease of its mosquito-borne infectious nature.
+This purpose of this project has been to serve as a demonstration of the value of comparative analysis in determining how invested a country might be in researching a specific disease. The analysis of Dengue Fever has produced results that one would expect from a disease of known mosquito-borne infectious nature.
 
 ## Looking ahead
 The ultimate goal of this project is to analyze diseases that are of indeterminate origin. By studying patterns in geographic distribution, we can form hypotheses regarding the pathogenesis of disease. For example, if analysis on disease "XYZ" results in a pattern of non-continguous developing countries producing significant amounts of research, then we would try to find the commonalities between the countries and conduct research to find the cause.
