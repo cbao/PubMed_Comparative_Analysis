@@ -92,7 +92,7 @@ The results for Dengue Fever research conducted by India for the years 2005 thro
 
 From this data, we can extrapolate that Dengue Fever is a very important topic of research to India and Brazil, but not a very important topic to Germany and Japan. This is expected as the Brazil and India are developing countries with climates that are hospitable to mosquitos, while Germany and Japan are not.
 
-While it may appear that the above countries are outliers selectively chosen to prove a point, the table below shows the top 15 countries ranked by how much total Dengue Fever research (between 2005 and 2015, inclusive) they disproportionately produce.
+While it may appear that the above countries are outliers selectively chosen to prove a point, the table below shows the top 15 countries ranked by how much total Dengue Fever research (between January 1st, 2005 and December 31st, 2015, inclusive) they disproportionately produce.
 
 Looking at the Wikipedia article for [Dengue Fever Outbreaks] (https://en.wikipedia.org/wiki/Dengue_fever_outbreaks), we can see that our data fits the distribution map below quite well.
 
