@@ -49,7 +49,7 @@ After much consideration, I simply settled on the term "Rat." Rats are one of th
 
 * 2) PubMed does have some inherent bias:  
 
-  * 2a) We will compare PubMed Dengue Fever data to PubMed Rat Data. If some bias does exist, there is no reason to think that one subset of data is any more or less biased than the another. Thus, comparing two samples from the same biased data will still allow us to gauge the relative **M** factor.
+  * 2a) We will compare PubMed Dengue Fever data to PubMed Rat Data. If some bias does exist, there is no reason to think that one subset of data is any more or less biased than another. Thus, comparing two samples from the same biased data will still allow us to gauge the relative **M** factor.
 
   * 2b) We will measure the bias of the PubMed data by weighing the PubMed Rat Data against the SciMago data. We will then assess the bias factor per country per year, and divide the Dengue Fever data by this bias factor. We then perform analysis of the "bias corrected" Dengue Fever data against the SciMago Data.  
 
@@ -67,7 +67,16 @@ We will use approach **2a** in this preliminary analysis, but all three approach
          "country2":{...},  
         }  
   ```
-and save them as .json files in the **Analysis/JSON_files** folder.
+and save them as .json files in the **Analysis/JSON_files** folder.  
+
+The extraction process using this [Python string splitting method] (https://github.com/cbao/PubMed_Comparative_Analysis/blob/master/Data_Extraction/data_extract.py#L35) resulted in a net loss of ~16% of the data (65,552 of 409,797 articles) for the Pubmed Rat data and and approximately ~22% loss for the Pubmed Dengue Fever Data (2,173  of 10,092 articles).
+
+This loss likely results from:  
+* Articles with no disclosed affiliations.  
+* Authors using lesser known names for their country.  
+* Authors using unconventional formats when disclosing their affiliation.  
+
+While this net loss may result in some distortion, we still retained approximately 80% of the original data from our two datasets, which should be sufficient for the purposes of this research. (80/20 splits are the convention in testing machine learning algorithms, so having 80% of the original data should still yield some very good insights.)
 
 3) **Analysis/analysis.py** will analyze the json objects created by **Data_Extraction/data_extraction.py** and print the results.
 
@@ -90,7 +99,7 @@ The results for Dengue Fever research conducted by India for the years 2005 thro
 |2014|2.5793825404|2.26380511365|0.634520768679|0.332124960401|
 |2015|3.14793507668|2.09246510766|0.530588237269|0.31295102915|
 
-From this data, we can extrapolate that Dengue Fever is a very important topic of research to India and Brazil, but not a very important topic to Germany and Japan. This is expected as the Brazil and India are developing countries with climates that are hospitable to mosquitos, while Germany and Japan are not.
+From this data, we can extrapolate that Dengue Fever is a very important topic of research to India and Brazil, but not a very important topic to Germany and Japan. This is expected as the Brazil and India are developing countries with climates that are hospitable to mosquitoes, while Germany and Japan are not.
 
 While it may appear that the above countries are outliers selectively chosen to prove a point, the table below shows the top 15 countries ranked by how much total Dengue Fever research (between January 1st, 2005 and December 31st, 2015, inclusive) they disproportionately produce.
 
@@ -125,7 +134,7 @@ Looking at the Wikipedia article for [Dengue Fever Outbreaks] (https://en.wikipe
 This purpose of this project has been to serve as a demonstration of the value of comparative analysis in determining how invested a country might be in researching a specific disease. The analysis of Dengue Fever has produced results that one would expect from a disease of known mosquito-borne infectious nature.
 
 ## Looking ahead
-The ultimate goal of this project is to analyze diseases that are of indeterminate origin. By studying patterns in geographic distribution, we can form hypotheses regarding the pathogenesis of disease. For example, if analysis on disease "XYZ" results in a pattern of non-continguous developing countries producing significant amounts of research, then we would try to find the commonalities between the countries and conduct research to find the cause.
+The ultimate goal of this project is to analyze diseases that are of indeterminate origin. By studying patterns in geographic distribution, we can form hypotheses regarding the pathogenesis of disease. For example, if analysis on disease "XYZ" results in a pattern of non-contiguous developing countries producing significant amounts of research, then we would try to find the commonalities between the countries and conduct research to find the cause.
 
 ## Acknowledgements
-Special thanks to [PubMed](https://www.pubmed.com) and [SciMago](https://scimagojr.com) for aggegrating this data and making it publicly available.
+Special thanks to [PubMed](https://www.pubmed.com) and [SciMago](https://scimagojr.com) for aggregating this data and making it publicly available.
