@@ -31,7 +31,7 @@ A weight of 1.0 will be assigned to each article, with the country of each discl
 
 For example, if a study is carried out by 5 researchers: 2 affiliated with Taiwanese universities, 1 affiliated with a South Korean university, and 2 undisclosed. Then Taiwan will receive ~.66 points and South Korea will receive ~.33 points.
 
-If a study has no disclosed affiliations, then the study will be ignored for the purpose of this analysis - for the reasons explained above in "Challenges" as to why the other available fields are unreliable.
+If a study doesn't have any disclosed affiliations, then the study will be ignored for the purpose of this analysis - for the reasons explained above in "Challenges" as to why the other available fields are unreliable.
 
 ## Finding the proper data to measure against
 We must first search for a topic that should be of equal interest to all countries. If we are successful in finding such a topic, then said topic should have a distribution curve similar to that of the distribution curve from the aggregated total research output.
@@ -72,7 +72,7 @@ and save them as .json files in the **Analysis/JSON_files** folder.
 The extraction process using this [Python string splitting method] (https://github.com/cbao/PubMed_Comparative_Analysis/blob/master/Data_Extraction/data_extract.py#L35) resulted in a net loss of ~16% of the data (65,552 of 409,797 articles) for the Pubmed Rat data and and approximately ~22% loss for the Pubmed Dengue Fever Data (2,173  of 10,092 articles).
 
 This loss likely results from:  
-* Articles with no disclosed affiliations.  
+* Articles with zero disclosed affiliations.  
 * Authors using lesser known names for their country.  
 * Authors using unconventional formats when disclosing their affiliation.  
 
