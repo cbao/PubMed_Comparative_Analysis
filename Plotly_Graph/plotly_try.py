@@ -26,9 +26,7 @@ def main():
           ) ]
 
     layout = dict(
-        title = '2014 Global GDP<br>Source:\
-                <a href="https://www.cia.gov/library/publications/the-world-factbook/fields/2195.html">\
-                CIA World Factbook</a>',
+        title = 'Countries ranked by M',
         geo = dict(
             showframe = False,
             showcoastlines = False,
@@ -59,7 +57,8 @@ def write_to_file(output_file, country_dict):
         with open(output_file, "w") as f:
             f.write(json.dumps(country_dict))
         print output_file + "has been created"
-    except:
+    except Exception as e:
+        print e
         print "Could not create" + output_file
 
 def map_country_to_code():
@@ -85,9 +84,11 @@ def map_country_to_code():
     no_code_countries = sorted(no_code_countries)
     no_code_sci_mago_countries = sorted([country for country in country_to_country_code_dict if country_to_country_code_dict[country] is None])
 
-    print no_code_countries
-    print no_code_sci_mago_countries
+#    print no_code_countries
+#    print no_code_sci_mago_countries
 
     write_to_file("country_to_country_code.json",country_to_country_code_dict)
 
-map_country_to_code()
+    
+#map_country_to_code()
+open_json_as_dict("country_to_country_code.json")
