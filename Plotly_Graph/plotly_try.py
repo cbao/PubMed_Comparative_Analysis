@@ -3,13 +3,13 @@ import pandas as pd
 import json
 
 def main():
-    df = pd.read_csv('sample_plotly_gdp_data.csv')
+    df = pd.read_csv('country_M_code.csv')
 
     data = [ dict(
             type = 'choropleth',
-            locations = df['CODE'],
-            z = df['GDP (BILLIONS)'],
-            text = df['COUNTRY'],
+            locations = df['Code'],
+            z = df['M'],
+            text = df['Country'],
             colorscale = [[0,"rgb(5, 10, 172)"],[0.35,"rgb(40, 60, 190)"],[0.5,"rgb(70, 100, 245)"],\
                 [0.6,"rgb(90, 120, 245)"],[0.7,"rgb(106, 137, 247)"],[1,"rgb(220, 220, 220)"]],
             autocolorscale = False,
@@ -21,8 +21,8 @@ def main():
                 ) ),
             colorbar = dict(
                 autotick = False,
-                tickprefix = '$',
-                title = 'GDP<br>Billions US$'),
+                tickprefix = '',
+                title = 'M'),
           ) ]
 
     layout = dict(
@@ -37,7 +37,7 @@ def main():
     )
 
     fig = dict( data=data, layout=layout )
-    py.iplot( fig, validate=False, filename='d3-world-map' )
+    py.iplot( fig, validate=False, filename='M-world-map' )
 
 def open_json_as_dict(json_file):
     '''
@@ -89,6 +89,20 @@ def map_country_to_code():
 
     write_to_file("country_to_country_code.json",country_to_country_code_dict)
 
-    
 #map_country_to_code()
-open_json_as_dict("country_to_country_code.json")
+
+def create_csv():
+    country_to_country_code_dict = open_json_as_dict("country_to_country_code.json")
+    M_results_from_2a = open("approach_2a.txt","r").read().splitlines()
+
+#    for line in M_results_from_2a:
+#        line = line.split(",")
+#        print len(line)
+
+    with open("country_M_code.csv","w") as f:
+        for line in M_results_from_2a:
+            country, M = line.split(",")
+            country_code = country_to_country_code_dict[country]
+            f.write(country + "," + M + "," + country_code + '\n')
+
+main()
