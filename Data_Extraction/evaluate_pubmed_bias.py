@@ -5,7 +5,9 @@ def open_json_as_dict(json_file):
         return json.loads(f.read())
 
 def evaluate_bias_by_year():
-    # Evaluates the bias in PubMed Rat data by country by year
+    '''
+    Evaluates the bias in PubMed Rat data by country by year
+    '''
 
     rat = open_json_as_dict("../Analysis/JSON_files/rat_2005_2015.json")
     sci_mago = open_json_as_dict("../Analysis/JSON_files/sci_mago.json")
@@ -48,7 +50,9 @@ def evaluate_bias_by_year():
         print "Could not create ../Analysis/JSON_files/pubmed_rat_to_sci_mago_bias.json"
 
 def evaluate_cumulative_bias():
-    # Evaluates the bias in the aggregated 2005-2015 PubMed Rat data
+    '''
+    Evaluates the bias in the aggregated 2005-2015 PubMed Rat data
+    '''
 
     rat = open_json_as_dict("../Analysis/JSON_files/rat_2005_2015.json")
     sci_mago = open_json_as_dict("../Analysis/JSON_files/sci_mago.json")
@@ -99,7 +103,9 @@ def evaluate_cumulative_bias():
         print "Could not create ../Analysis/JSON_files/pubmed_rat_to_sci_mago_bias_cumulative.json"
 
 def unbias_dengue_data():
-    # Corrects the assigned scores in dengue_fever_2005_2015.json by dividing each score by its bias factor
+    '''
+    Corrects the assigned scores in dengue_fever_2005_2015.json by dividing each score by its bias factor
+    '''
 
     dengue_file = "../Analysis/JSON_files/dengue_fever_2005_2015.json"
     bias_file = "../Analysis/JSON_files/pubmed_rat_to_sci_mago_bias.json"
