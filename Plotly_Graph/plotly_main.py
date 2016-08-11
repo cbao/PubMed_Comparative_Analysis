@@ -31,52 +31,52 @@ def main():
     Sample: https://plot.ly/python/choropleth-maps/#world-choropleth-map
     '''
 
-    df = pd.read_csv('revised_country_M_code.csv')
+    df = pd.read_csv("country_M_code.csv")
 
     data = [ dict(
-            type = 'choropleth', 
-            locations = df['Code'], 
-            z = df['M'], 
-            text = df['Country'], 
+            type = "choropleth", 
+            locations = df["Code"], 
+            z = df["M>2"], 
+            text = df["Country"], 
             autocolorscale = True, 
             reversescale = False, 
             marker = dict(
                 line = dict (
-                    color = 'rgb(180, 180, 180)', 
+                    color = "rgb(180, 180, 180)", 
                     width = 0.5
                 ) ), 
             colorbar = dict(
                 autotick = False, 
-                tickprefix = '', 
-                title = 'M'), 
+                tickprefix = "", 
+                title = "M"), 
           ) ]
 
     layout = dict(
-        title = 'Countries ranked by M', 
+        title = "Countries ranked by M", 
         geo = dict(
             showframe = False, 
             showcoastlines = False, 
             projection = dict(
-                type = 'Mercator'
+                type = "Mercator"
             )
         )
     )
 
     fig = dict( data=data, layout=layout )
-    py.iplot( fig, validate=False, filename='M-world-map' )
+    py.iplot( fig, validate=False, filename="M-world-map" )
 
 def map_country_to_code():
     '''
     Takes our sci_mago countries and maps them to Plot.ly world map country codes
     '''
 
-    sci_mago_dict = open_json_as_dict('../Analysis/JSON_files/sci_mago.json')
+    sci_mago_dict = open_json_as_dict("../Analysis/JSON_files/sci_mago.json")
 
     country_to_country_code_dict = {country:None for country in sci_mago_dict}
 
-    df = pd.read_csv('sample_plotly_gdp_data.csv')
-    country = df['COUNTRY']
-    code = df['CODE']
+    df = pd.read_csv("sample_plotly_gdp_data.csv")
+    country = df["COUNTRY"]
+    code = df["CODE"]
 
     country_code_tuples = zip(country, code)
 
@@ -103,41 +103,17 @@ def create_csv():
     '''
     
     country_to_country_code_dict = open_json_as_dict("country_to_country_code.json")
-    M_results_from_2a = open("approach_2a.txt", "r").read().splitlines()
+    M_results_from_2a = open("../Analysis/Results/approach_2a.txt", "r").read().splitlines()
 
     with open("country_M_code.csv", "w") as f:
-        for line in M_results_from_2a:
-            country, M = line.split(", ")
+        f.write("Country,M,Code,M>2" + "\n")
+        for line in M_results_from_2a: # Example: "1. Sri Lanka : 110.4"
+            current_line = line.split(" : ") # ["1. Sri Lanka", "110.4"]
+            country = current_line[0].split(". ")[1] # "Sri Lanka"
+            M = current_line[1] # "110.4""
+            M_greater_than_two = "1" if float(M) > 2 else "0"
             country_code = country_to_country_code_dict[country]
-            f.write(country + ", " + M + ", " + country_code + '\n')
+            f.write(country + "," + M + "," + country_code + "," + M_greater_than_two + "\n")
 
-def create_revised_csv():
-    '''
-    Creates a modified CSV to show only countries with M values > 2.
-    '''
-
-    country_to_country_code_dict = open_json_as_dict("country_to_country_code.json")
-    country_to_plot_data_dict = {}
-
-    M_results_from_2a = open("approach_2a_simplified.txt", "r").read().splitlines()
-
-    for line in M_results_from_2a:
-        country, M = line.split(", ")
-        if float(M) > 2.0:
-            M = 1
-        else:
-            M = 0
-        country_code = country_to_country_code_dict[country]
-        country_to_plot_data_dict[country] = {'code':country_code, 'M':M}
-
-    for country in country_to_country_code_dict:
-        if country not in country_to_plot_data_dict and country_to_country_code_dict[country] is not None:
-            country_to_plot_data_dict[country] = {'code':country_to_country_code_dict[country], 'M':0}
-
-    with open("revised_country_M_code.csv", "w") as f:
-        f.write("Country, M, Code" + '\n')
-        for country in country_to_plot_data_dict:
-            f.write(country + ", " + str(country_to_plot_data_dict[country]['M']) + ", " + country_to_plot_data_dict[country]['code'] + '\n')
-
-create_revised_csv()
+create_csv()
 main()

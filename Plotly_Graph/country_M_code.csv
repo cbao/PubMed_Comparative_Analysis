@@ -1,78 +1,78 @@
-Country,M,Code
-Sri Lanka,110.4,LKA
-Colombia,57.09,COL
-Indonesia,40.06,IDN
-Cuba,31.58,CUB
-Puerto Rico,29.49,PRI
-Thailand,21.35,THA
-Singapore,20.11,SGP
-Malaysia,10.64,MYS
-Bangladesh,8.800,BGD
-Venezuela,8.787,VEN
-Pakistan,8.452,PAK
-Ghana,3.559,GHA
-India,3.023,IND
-Mexico,2.580,MEX
-Brazil,2.567,BRA
-Australia,2.356,AUS
-Taiwan,2.106,TWN
-Argentina,1.919,ARG
-Saudi Arabia,1.837,SAU
-France,1.624,FRA
-Ethiopia,1.404,ETH
-Uruguay,1.344,URY
-Cameroon,1.260,CMR
-Belgium,0.999,BEL
-United Kingdom,0.949,GBR
-Hong Kong,0.920,HKG
-Austria,0.908,AUT
-Netherlands,0.886,NLD
-Georgia,0.824,GEO
-United States,0.819,USA
-Switzerland,0.813,CHE
-Portugal,0.731,PRT
-Greece,0.554,GRC
-Tunisia,0.479,TUN
-Sweden,0.469,SWE
-South Africa,0.435,ZAF
-Morocco,0.415,MAR
-Croatia,0.408,HRV
-Germany,0.386,DEU
-Nigeria,0.381,NGA
-Italy,0.336,ITA
-Jordan,0.316,JOR
-Finland,0.316,FIN
-Norway,0.301,NOR
-China,0.297,CHN
-Israel,0.284,ISR
-Canada,0.279,CAN
-Chile,0.269,CHL
-Japan,0.267,JPN
-New Zealand,0.241,NZL
-Egypt,0.240,EGY
-Spain,0.237,ESP
-South Korea,0.203,PRK
-Denmark,0.149,DNK
-Czech Republic,0.135,CZE
-Romania,0.135,ROU
-Slovakia,0.114,SVK
-Serbia,0.108,SRB
-Russia,0.090,RUS
-Ireland,0.084,IRL
-Poland,0.084,POL
-Iran,0.066,IRN
-Kuwait,0.042,KWT
-Turkey,0.023,TUR
-United Arab Emirates,0.0,ARE
-Ukraine,0.0,UKR
-Slovenia,0.0,SVN
-Lithuania,0.0,LTU
-Lebanon,0.0,LBN
-Latvia,0.0,LVA
-Hungary,0.0,HUN
-Estonia,0.0,EST
-Bulgaria,0.0,BGR
-Bosnia and Herzegovina,0.0,BIH
-Belarus,0.0,BLR
-Armenia,0.0,ARM
-Algeria,0.0,DZA
+Country,M,Code,M>2
+Sri Lanka,110.4,LKA,1
+Colombia,57.09,COL,1
+Indonesia,40.06,IDN,1
+Cuba,31.58,CUB,1
+Puerto Rico,29.49,PRI,1
+Thailand,21.35,THA,1
+Singapore,20.11,SGP,1
+Malaysia,10.64,MYS,1
+Bangladesh,8.800,BGD,1
+Venezuela,8.787,VEN,1
+Pakistan,8.452,PAK,1
+Ghana,3.559,GHA,1
+India,3.023,IND,1
+Mexico,2.580,MEX,1
+Brazil,2.567,BRA,1
+Australia,2.356,AUS,1
+Taiwan,2.106,TWN,1
+Argentina,1.919,ARG,0
+Saudi Arabia,1.837,SAU,0
+France,1.624,FRA,0
+Ethiopia,1.404,ETH,0
+Uruguay,1.344,URY,0
+Cameroon,1.260,CMR,0
+Belgium,0.999,BEL,0
+United Kingdom,0.949,GBR,0
+Hong Kong,0.920,HKG,0
+Austria,0.908,AUT,0
+Netherlands,0.886,NLD,0
+Georgia,0.824,GEO,0
+United States,0.819,USA,0
+Switzerland,0.813,CHE,0
+Portugal,0.731,PRT,0
+Greece,0.554,GRC,0
+Tunisia,0.479,TUN,0
+Sweden,0.469,SWE,0
+South Africa,0.435,ZAF,0
+Morocco,0.415,MAR,0
+Croatia,0.408,HRV,0
+Germany,0.386,DEU,0
+Nigeria,0.381,NGA,0
+Italy,0.336,ITA,0
+Jordan,0.316,JOR,0
+Finland,0.316,FIN,0
+Norway,0.301,NOR,0
+China,0.297,CHN,0
+Israel,0.284,ISR,0
+Canada,0.279,CAN,0
+Chile,0.269,CHL,0
+Japan,0.267,JPN,0
+New Zealand,0.241,NZL,0
+Egypt,0.240,EGY,0
+Spain,0.237,ESP,0
+South Korea,0.203,PRK,0
+Denmark,0.149,DNK,0
+Czech Republic,0.135,CZE,0
+Romania,0.135,ROU,0
+Slovakia,0.114,SVK,0
+Serbia,0.108,SRB,0
+Russia,0.090,RUS,0
+Ireland,0.084,IRL,0
+Poland,0.084,POL,0
+Iran,0.066,IRN,0
+Kuwait,0.042,KWT,0
+Turkey,0.023,TUR,0
+United Arab Emirates,0.0,ARE,0
+Ukraine,0.0,UKR,0
+Slovenia,0.0,SVN,0
+Lithuania,0.0,LTU,0
+Lebanon,0.0,LBN,0
+Latvia,0.0,LVA,0
+Hungary,0.0,HUN,0
+Estonia,0.0,EST,0
+Bulgaria,0.0,BGR,0
+Bosnia and Herzegovina,0.0,BIH,0
+Belarus,0.0,BLR,0
+Armenia,0.0,ARM,0
+Algeria,0.0,DZA,0
