@@ -135,8 +135,8 @@ Looking at the Wikipedia article for [Dengue Fever Outbreaks] (https://en.wikipe
 > Red: Epidemic dengue  
 > Blue: Aedes aegypti (A mosquito that can spread dengue fever, chikungunya, Zika fever and yellow fever viruses, and other diseases.)    
 
-![alt](Plotly_Graph/plot.png)
 
+[![Foo](Plotly_Graph/plot.png)](https://plot.ly/2/~cbao/)
 
 # Discussion
 ## Comments
