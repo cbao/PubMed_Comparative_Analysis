@@ -1,5 +1,4 @@
 import json
-import csv
 import pandas as pd
 import plotly.plotly as py
 
@@ -90,12 +89,10 @@ def map_country_to_code():
 
     no_code_countries = sorted(no_code_countries)
 
-#    Some countries could not be linked to country codes due to name differences
+#    Some countries could not be linked to their country codes due to name differences
 #    For those countries, we have to associate them manually
 
     write_to_file("country_to_country_code.json", country_to_country_code_dict)
-
-#map_country_to_code()
 
 def create_csv():
     '''
@@ -111,9 +108,11 @@ def create_csv():
             current_line = line.split(" : ") # ["1. Sri Lanka", "110.4"]
             country = current_line[0].split(". ")[1] # "Sri Lanka"
             M = current_line[1] # "110.4""
-            M_greater_than_two = "1" if float(M) > 2 else "0"
-            country_code = country_to_country_code_dict[country]
-            f.write(country + "," + M + "," + country_code + "," + M_greater_than_two + "\n")
+            M_greater_than_two = "1" if float(M) > 2 else "0" # "1"
+            country_code = country_to_country_code_dict[country] # "LKA"
+            statement = ",".join([country, M, country_code, M_greater_than_two]) + "\n" # "Sri Lanka, 110.4, LKA, 1"
+            f.write(statement)
 
-create_csv()
-main()
+#map_country_to_code()
+#create_csv()
+#main()
