@@ -73,7 +73,7 @@ The extraction process using this [Python string splitting method] (https://gith
 
 This loss likely results from:  
 * Articles with zero disclosed affiliations.  
-* Authors using lesser known names for their country.  
+* Authors using lesser known names for their countries.  
 * Authors using unconventional formats when disclosing their affiliation.  
 
 While this net loss may result in some distortion, we still retained approximately 80% of the original data from our two datasets, which should be sufficient for the purposes of this research. (80/20 splits are the convention in testing machine learning algorithms, so having 80% of the original data should still yield some very good insights.)
@@ -140,7 +140,7 @@ Looking at the Wikipedia article for [Dengue Fever Outbreaks] (https://en.wikipe
 
 # Discussion
 ## Comments
-This purpose of this project has been to serve as a demonstration of the value of comparative analysis in determining how invested a country might be in researching a specific disease. The analysis of Dengue Fever has produced results that one would expect from a disease of known mosquito-borne infectious nature.
+This purpose of this project has been to serve as a demonstration for the value of comparative analysis in determining how invested a country might be in researching a specific disease. The analysis of Dengue Fever has produced results that one would expect from a disease of known mosquito-borne infectious nature.
 
 ## Looking ahead
 The ultimate goal of this project is to analyze diseases that are of indeterminate origin. By studying patterns in geographic distribution, we can form hypotheses regarding the pathogenesis of disease. For example, if analysis on disease "XYZ" results in a pattern of non-contiguous developing countries producing significant amounts of research, then we would try to find the commonalities between the countries and conduct research to find the cause.
