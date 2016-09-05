@@ -21,7 +21,7 @@ def process_element(elem, country_year_count_dict):
         article_year = elem.find("MedlineCitation").find("DateCreated").find("Year").text
         authors = elem.find("MedlineCitation").find("Article").find("AuthorList").findall("Author")
     except:
-        return
+        return # Keys don't exist - nothing to process
 
     current_article_countries = []
 
@@ -30,7 +30,7 @@ def process_element(elem, country_year_count_dict):
             affiliation_info = author.find("AffiliationInfo")
             affiliation = affiliation_info.find("Affiliation").text
         except:
-            continue
+            continue # Affiliation or affiliation information doesn't exist - move onto next author
 
         # Example Affiliation: "Department of Human Genetics and Genomic Medicine, Faculty of Medicine, University of Southampton, Southampton, UK."
 
@@ -65,13 +65,15 @@ def process_element(elem, country_year_count_dict):
     number_of_authors = float(len(current_article_countries))
 
     if number_of_authors == 0.0:
-        return
+        return # No authors found - nothing to compute.
     else:
         for country in current_article_countries:
             try:
                 country_year_count_dict[country][article_year] += 1/number_of_authors
             except KeyError:
                 continue
+            except Exception, e:
+                print e
 
 def write_to_file(output_file, country_dict):
     '''
@@ -82,9 +84,9 @@ def write_to_file(output_file, country_dict):
     try:
         with open(output_file, "w") as f:
             f.write(json.dumps(country_dict))
-        print output_file + "has been created"
+        print output_file + " has been created"
     except:
-        print "Could not create" + output_file
+        print "Could not create " + output_file
 
 def main(file_location, output_file):
 
