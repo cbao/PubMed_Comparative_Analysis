@@ -19,10 +19,10 @@ def write_to_file(output_file, country_dict):
     try:
         with open(output_file, "w") as f:
             f.write(json.dumps(country_dict))
-        print output_file + "has been created"
+        print output_file + " has been created"
     except Exception as e:
         print e
-        print "Could not create" + output_file
+        print "Could not create " + output_file
 
 def main():
     '''

@@ -1,6 +1,6 @@
 import json
 
-# The input parameter names for these functions are intentionally vague since they can be used for all the json files we've created.
+# The input parameter names for these functions are intentionally vague since they can be used for any of the json files we've created.
 
 def open_json_as_dict(json_file):
     '''
@@ -29,10 +29,15 @@ def cumulative_analysis(file_one, file_two):
                 first_sum[country] += first[country][str(year)]
             except KeyError:
                 pass
+            except Exception, e:
+                print e
+
             try:
                 second_sum[country] += second[country][str(year)]
             except KeyError:
                 pass
+            except Exception, e:
+                print e
 
     first_total_sum = sum(first_sum.values())
     second_total_sum = sum(second_sum.values())
@@ -50,6 +55,10 @@ def cumulative_analysis(file_one, file_two):
             first_to_second_ratio[country] = first_proportion/second_proportion 
         except KeyError:
             pass
+        except ZeroDivisionError:
+            pass
+        except Exception, e:
+            print e
 
     first_to_second_tuples = []
 
@@ -58,6 +67,8 @@ def cumulative_analysis(file_one, file_two):
             first_to_second_tuples.append((first_to_second_ratio[country], country))
         except KeyError:
             pass
+        except Exception, e:
+            print e
 
     count = 1
     for tup in sorted(first_to_second_tuples)[::-1][:20]:
@@ -85,6 +96,8 @@ def analyze_by_year(file_one, file_two):
                 first_total_year_weight += first[country][str(year)]
             except KeyError:
                 pass
+            except Exception, e:
+                print e
 
         # Assess total second weight
         second_total_year_weight = 0.0
@@ -93,6 +106,8 @@ def analyze_by_year(file_one, file_two):
                 second_total_year_weight += second[country][str(year)]
             except KeyError:
                 pass
+            except Exception, e:
+                print e
         # Make list of tuples of (dengue fever proportion/second proportion)
 
         first_to_second_tuples = []
@@ -104,6 +119,10 @@ def analyze_by_year(file_one, file_two):
                 first_to_second_tuples.append((first_proportion/second_proportion, country))
             except KeyError:
                 pass
+            except ZeroDivisionError:
+                pass
+            except Exception, e:
+                print e
 
         # Sort countries by M
         for tup in sorted(first_to_second_tuples)[::-1][:20]:
@@ -131,6 +150,8 @@ def analyze_specific_countries_by_year(file_one, file_two, countries):
                 first_total_year_weight += first[country][str(year)]
             except KeyError:
                 pass
+            except Exception, e:
+                print e
 
         # Assess total second weight
         second_total_year_weight = 0.0
@@ -139,6 +160,8 @@ def analyze_specific_countries_by_year(file_one, file_two, countries):
                 second_total_year_weight += second[country][str(year)]
             except KeyError:
                 pass
+            except Exception, e:
+                print e
 
         statement = "|" + str(year)
         for specific_country in countries:
@@ -155,16 +178,16 @@ def analyze_specific_countries_by_year(file_one, file_two, countries):
 def main():
     countries_to_analyze = ["India", "Brazil", "Germany", "Japan"]
 
-    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json", countries_to_analyze)
-#    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json", countries_to_analyze)
+#    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json", countries_to_analyze)
+    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json", countries_to_analyze)
 #    analyze_specific_countries_by_year("JSON_files/bias_corrected_dengue_fever_2005_2015.json", "JSON_files/sci_mago.json", countries_to_analyze)
 
-    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
-#    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
+#    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
+    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
 #    analyze_by_year("JSON_files/bias_corrected_dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
 
-    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
-#    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
+#    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
+    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
 #    cumulative_analysis("JSON_files/bias_corrected_dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
 
 main()

@@ -79,6 +79,7 @@ def evaluate_cumulative_bias():
                 pass
             except Exception, e:
                 print e
+
             try:
                 sci_mago_sum[country] += sci_mago[country][str(year)]
             except KeyError:
