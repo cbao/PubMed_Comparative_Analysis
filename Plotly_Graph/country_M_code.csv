@@ -1,78 +1,215 @@
 Country,M,Code,M>2
-Sri Lanka,110.4,LKA,1
-Colombia,57.09,COL,1
-Indonesia,40.06,IDN,1
-Cuba,31.58,CUB,1
-Puerto Rico,29.49,PRI,1
-Thailand,21.35,THA,1
-Singapore,20.11,SGP,1
-Malaysia,10.64,MYS,1
-Bangladesh,8.800,BGD,1
-Venezuela,8.787,VEN,1
-Pakistan,8.452,PAK,1
-Ghana,3.559,GHA,1
-India,3.023,IND,1
-Mexico,2.580,MEX,1
-Brazil,2.567,BRA,1
-Australia,2.356,AUS,1
-Taiwan,2.106,TWN,1
-Argentina,1.919,ARG,0
-Saudi Arabia,1.837,SAU,0
-France,1.624,FRA,0
-Ethiopia,1.404,ETH,0
-Uruguay,1.344,URY,0
-Cameroon,1.260,CMR,0
-Belgium,0.999,BEL,0
-United Kingdom,0.949,GBR,0
-Hong Kong,0.920,HKG,0
-Austria,0.908,AUT,0
-Netherlands,0.886,NLD,0
-Georgia,0.824,GEO,0
-United States,0.819,USA,0
-Switzerland,0.813,CHE,0
-Portugal,0.731,PRT,0
-Greece,0.554,GRC,0
-Tunisia,0.479,TUN,0
-Sweden,0.469,SWE,0
-South Africa,0.435,ZAF,0
-Morocco,0.415,MAR,0
-Croatia,0.408,HRV,0
-Germany,0.386,DEU,0
-Nigeria,0.381,NGA,0
-Italy,0.336,ITA,0
-Jordan,0.316,JOR,0
-Finland,0.316,FIN,0
-Norway,0.301,NOR,0
-China,0.297,CHN,0
-Israel,0.284,ISR,0
-Canada,0.279,CAN,0
-Chile,0.269,CHL,0
-Japan,0.267,JPN,0
-New Zealand,0.241,NZL,0
-Egypt,0.240,EGY,0
-Spain,0.237,ESP,0
-South Korea,0.203,PRK,0
-Denmark,0.149,DNK,0
-Czech Republic,0.135,CZE,0
-Romania,0.135,ROU,0
-Slovakia,0.114,SVK,0
-Serbia,0.108,SRB,0
-Russia,0.090,RUS,0
-Ireland,0.084,IRL,0
-Poland,0.084,POL,0
-Iran,0.066,IRN,0
-Kuwait,0.042,KWT,0
-Turkey,0.023,TUR,0
+Nicaragua,5600.4,NIC,1
+Cambodia,548.69,KHM,1
+French Polynesia,485.05,PYF,1
+Senegal,278.87,SEN,1
+New Caledonia,271.46,NCL,1
+Vietnam,215.03,VNM,1
+Myanmar,213.87,MMR,1
+Papua New Guinea,140.34,PNG,1
+Gabon,139.07,GAB,1
+Paraguay,130.02,PRY,1
+Sri Lanka,110.40,LKA,1
+Philippines,101.46,PHL,1
+Bolivia,92.876,BOL,1
+Brunei Darussalam,86.684,BRN,1
+Ecuador,69.015,ECU,1
+Mozambique,65.013,MOZ,1
+Colombia,57.092,COL,1
+Cayman Islands,43.342,CYM,1
+Indonesia,40.061,IDN,1
+Sudan,34.958,SDN,1
+Nepal,32.835,NPL,1
+Cuba,31.589,CUB,1
+Peru,31.174,PER,1
+Puerto Rico,29.498,PRI,1
+Kenya,27.978,KEN,1
+Panama,24.204,PAN,1
+Mauritius,23.300,MUS,1
+Thailand,21.350,THA,1
+Singapore,20.114,SGP,1
+Trinidad and Tobago,19.493,TTO,1
+Costa Rica,17.729,CRI,1
+Jamaica,15.374,JAM,1
+Madagascar,14.906,MDG,1
+Yemen,14.108,YEM,1
+Guatemala,10.943,GTM,1
+Fiji,10.835,FJI,1
+Malaysia,10.647,MYS,1
+Bangladesh,8.8004,BGD,1
+Venezuela,8.7871,VEN,1
+Tanzania,8.7174,TZA,1
+Pakistan,8.4520,PAK,1
+Congo,7.8016,COG,1
+Cyprus,6.0477,CYP,1
+Uganda,4.4444,UGA,1
+Oman,4.1924,OMN,1
+Ghana,3.5590,GHA,1
+India,3.0235,IND,1
+Mexico,2.5801,MEX,1
+Brazil,2.5673,BRA,1
+Australia,2.3566,AUS,1
+Taiwan,2.1063,TWN,1
+Burkina Faso,1.9640,BFA,1
+Argentina,1.9199,ARG,1
+Saudi Arabia,1.8371,SAU,1
+France,1.6241,FRA,1
+Ethiopia,1.4040,ETH,1
+Qatar,1.3636,QAT,1
+Uruguay,1.3442,URY,1
+Cameroon,1.2601,CMR,1
+Bahrain,1.1972,BHR,1
+Belgium,0.9996,BEL,0
+United Kingdom,0.9497,GBR,0
+Hong Kong,0.9209,HKG,0
+Austria,0.9086,AUT,0
+Netherlands,0.8864,NLD,0
+Georgia,0.8242,GEO,0
+United States,0.8196,USA,0
+Switzerland,0.8137,CHE,0
+Portugal,0.7319,PRT,0
+Greece,0.5541,GRC,0
+Tunisia,0.4796,TUN,0
+Sweden,0.4697,SWE,0
+South Africa,0.4355,ZAF,0
+Morocco,0.4158,MAR,0
+Croatia,0.4080,HRV,0
+Benin,0.4013,BEN,0
+Germany,0.3860,DEU,0
+Nigeria,0.3818,NGA,0
+Italy,0.3366,ITA,0
+Jordan,0.3165,JOR,0
+Finland,0.3165,FIN,0
+Zimbabwe,0.3165,ZWE,0
+Norway,0.3018,NOR,0
+China,0.2970,CHN,0
+Israel,0.2840,ISR,0
+Canada,0.2790,CAN,0
+Chile,0.2695,CHL,0
+Japan,0.2673,JPN,0
+New Zealand,0.2412,NZL,0
+Egypt,0.2406,EGY,0
+Spain,0.2371,ESP,0
+South Korea,0.2039,PRK,0
+Luxembourg,0.1895,LUX,0
+Denmark,0.1497,DNK,0
+Czech Republic,0.1352,CZE,0
+Romania,0.1351,ROU,0
+Slovakia,0.1141,SVK,0
+Serbia,0.1086,SRB,0
+Russia,0.0907,RUS,0
+Ireland,0.0846,IRL,0
+Poland,0.0840,POL,0
+Iran,0.0667,IRN,0
+Kuwait,0.0426,KWT,0
+Turkey,0.0236,TUR,0
+Uzbekistan,0.0,UZB,0
 United Arab Emirates,0.0,ARE,0
 Ukraine,0.0,UKR,0
+Togo,0.0,TGO,0
+Tajikistan,0.0,TJK,0
+Syrian Arab Republic,0.0,SYR,0
 Slovenia,0.0,SVN,0
+Saint Kitts and Nevis,0.0,KNA,0
+North Korea,0.0,KOR,0
+Niger,0.0,NER,0
+Montenegro,0.0,MNE,0
+Mongolia,0.0,MNG,0
+Monaco,0.0,MCO,0
+Moldova,0.0,MDA,0
+Malta,0.0,MLT,0
+Mali,0.0,MLI,0
+Malawi,0.0,MWI,0
+Macedonia,0.0,MKD,0
+Macao,0.0,MAC,0
 Lithuania,0.0,LTU,0
+Libya,0.0,LBY,0
+Lesotho,0.0,LSO,0
 Lebanon,0.0,LBN,0
 Latvia,0.0,LVA,0
+Kyrgyzstan,0.0,KGZ,0
+Kazakhstan,0.0,KAZ,0
+Ivory Coast,0.0,CIV,0
+Iraq,0.0,IRQ,0
+Iceland,0.0,ISL,0
 Hungary,0.0,HUN,0
+Greenland,0.0,GRL,0
+Faroe Islands,0.0,FRO,0
 Estonia,0.0,EST,0
+Eritrea,0.0,ERI,0
 Bulgaria,0.0,BGR,0
+Botswana,0.0,BWA,0
 Bosnia and Herzegovina,0.0,BIH,0
+Belize,0.0,BLZ,0
 Belarus,0.0,BLR,0
+Azerbaijan,0.0,AZE,0
 Armenia,0.0,ARM,0
 Algeria,0.0,DZA,0
+Albania,0.0,ALB,0
+Sao Tome and Principe,Unknown,STP,0
+Turkmenistan,Unknown,TKM,0
+Aruba,Unknown,ABW,0
+Swaziland,Unknown,SWZ,0
+American Samoa,Unknown,ASM,0
+Liberia,Unknown,LBR,0
+Niue,Unknown,NIU,0
+Samoa,Unknown,WSM,0
+Guam,Unknown,GUM,0
+Saint Vincent and the Grenadines,Unknown,VCT,0
+Afghanistan,Unknown,AFG,0
+Virgin Islands (British),Unknown,VGB,0
+Northern Mariana Islands,Unknown,MNP,0
+Andorra,Unknown,AND,0
+Solomon Islands,Unknown,SLB,0
+Saint Lucia,Unknown,LCA,0
+San Marino,Unknown,SMR,0
+Rwanda,Unknown,RWA,0
+Somalia,Unknown,SOM,0
+Laos,Unknown,LAO,0
+Cook Islands,Unknown,COK,0
+Federated States of Micronesia,Unknown,FSM,0
+Antigua and Barbuda,Unknown,ATG,0
+Dominican Republic,Unknown,DOM,0
+Tonga,Unknown,TON,0
+Central African Republic,Unknown,CAF,0
+Angola,Unknown,AGO,0
+Democratic Republic Congo,Unknown,COD,0
+Virgin Islands (U.S.),Unknown,VGB,0
+Guinea,Unknown,GIN,0
+Cape Verde,Unknown,CPV,0
+Bahamas,Unknown,BHM,0
+Gibraltar,Unknown,GIB,0
+El Salvador,Unknown,SLV,0
+Tuvalu,Unknown,TUV,0
+Saint Pierre and Miquelon,Unknown,SPM,0
+Marshall Islands,Unknown,MHL,0
+Haiti,Unknown,HTI,0
+Sierra Leone,Unknown,SLE,0
+Gambia,Unknown,GMB,0
+Namibia,Unknown,NAM,0
+Guinea-Bissau,Unknown,GNB,0
+Kiribati,Unknown,KIR,0
+Grenada,Unknown,GRD,0
+Seychelles,Unknown,SYC,0
+Chad,Unknown,TCD,0
+Falkland Islands (Malvinas),Unknown,FLK,0
+Bermuda,Unknown,BMU,0
+Timor-Leste,Unknown,TLS,0
+Dominica,Unknown,DMA,0
+Burundi,Unknown,BDI,0
+Barbados,Unknown,BRB,0
+Palau,Unknown,PLW,0
+Bhutan,Unknown,BTN,0
+Liechtenstein,Unknown,LIE,0
+Maldives,Unknown,MDV,0
+Suriname,Unknown,SUR,0
+Vanuatu ,Unknown,VUT,0
+Anguilla,Unknown,AIA,0
+Zambia,Unknown,ZMB,0
+Djibouti,Unknown,DJI,0
+Mauritania,Unknown,MRT,0
+South Sudan,Unknown,SSD,0
+Guyana,Unknown,GUY,0
+Honduras,Unknown,HND,0
+Equatorial Guinea,Unknown,GNQ,0
+Comoros,Unknown,COM,0
