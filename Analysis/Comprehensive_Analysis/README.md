@@ -141,7 +141,7 @@ To account for this potential bias, we will perform analysis under two separate 
 > Blue: Aedes aegypti (A mosquito that can spread dengue fever, chikungunya, Zika fever and yellow fever viruses, and other diseases.)  
 
 
-|Rank   |     Country  |    M  |  Country  |    M  |  Country  |    M  |
+|Rank   |	  Country  |  M (1) |  Country  |  M (2a) |  Country  |  M (2b) |
 |:-----:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | 1 | French Guiana | 52.592 |Nicaragua | 5600.4 |Vietnam | 137.21 |
 | 2 | Nicaragua | 48.022 |French Guiana | 765.50 |Sri Lanka | 78.450 |
