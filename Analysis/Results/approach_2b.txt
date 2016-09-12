@@ -1,122 +1,235 @@
-1. Vietnam : 137.2
-2. Sri Lanka : 78.45
-3. Philippines : 45.26
-4. Puerto Rico : 44.79
-5. Indonesia : 39.35
-6. Colombia : 35.47
-7. Nepal : 34.39
-8. Kenya : 25.68
-9. Cuba : 22.36
-10. Ecuador : 21.28
-11. Peru : 17.71
-12. Gabon : 14.64
-13. Thailand : 13.70
-14. Singapore : 13.53
-15. Sudan : 12.75
-16. Jamaica : 10.46
-17. Trinidad and Tobago : 9.160
-18. Senegal : 8.127
-19. Costa Rica : 7.631
-20. Cambodia : 7.536
-21. Bangladesh : 7.257
-22. Malaysia : 6.666
-23. Venezuela : 5.782
-24. Congo : 5.732
-25. Tanzania : 5.526
-26. Pakistan : 5.003
-27. Cyprus : 4.907
-28. Madagascar : 4.014
-29. Panama : 3.042
-30. Uganda : 2.635
-31. Oman : 1.950
-32. Ghana : 1.876
-33. India : 1.829
-34. Brazil : 1.556
-35. Australia : 1.526
-36. Mexico : 1.521
-37. Bolivia : 1.404
-38. Taiwan : 1.287
-39. Guatemala : 1.255
-40. Argentina : 1.239
-41. Saudi Arabia : 1.099
-42. France : 1.074
-43. Cameroon : 1.007
-44. Uruguay : 0.946
-45. Ethiopia : 0.914
-46. Burkina Faso : 0.837
-47. Belgium : 0.691
-48. United Kingdom : 0.641
-49. Qatar : 0.593
-50. Netherlands : 0.574
-51. United States : 0.571
-52. Austria : 0.564
-53. Hong Kong : 0.548
-54. Switzerland : 0.519
-55. Portugal : 0.469
-56. Greece : 0.380
-57. Georgia : 0.353
-58. Sweden : 0.334
-59. South Africa : 0.272
-60. Germany : 0.254
-61. Tunisia : 0.249
-62. Italy : 0.227
-63. Croatia : 0.221
-64. Finland : 0.217
-65. Norway : 0.193
-66. Israel : 0.185
-67. Japan : 0.178
-68. Canada : 0.177
-69. Nigeria : 0.177
-70. China : 0.175
-71. Chile : 0.170
-72. New Zealand : 0.161
-73. Jordan : 0.161
-74. Morocco : 0.158
-75. Benin : 0.154
-76. Spain : 0.152
-77. Egypt : 0.121
-78. South Korea : 0.119
-79. Zimbabwe : 0.101
-80. Denmark : 0.099
-81. Czech Republic : 0.089
-82. Romania : 0.085
-83. Slovakia : 0.078
-84. Serbia : 0.065
-85. Luxembourg : 0.056
-86. Russia : 0.054
-87. Poland : 0.046
-88. Ireland : 0.045
-89. Iran : 0.030
-90. Kuwait : 0.024
-91. Turkey : 0.015
-92. Zambia : 0.0
-93. United Arab Emirates : 0.0
-94. Ukraine : 0.0
-95. Syrian Arab Republic : 0.0
-96. Slovenia : 0.0
-97. Rwanda : 0.0
-98. Palestine : 0.0
-99. Mozambique : 0.0
-100. Malta : 0.0
-101. Mali : 0.0
-102. Malawi : 0.0
-103. Macedonia : 0.0
-104. Macao : 0.0
-105. Lithuania : 0.0
-106. Libya : 0.0
-107. Lebanon : 0.0
-108. Latvia : 0.0
-109. Ivory Coast : 0.0
-110. Iraq : 0.0
-111. Iceland : 0.0
-112. Hungary : 0.0
-113. Gambia : 0.0
-114. Estonia : 0.0
-115. Bulgaria : 0.0
-116. Botswana : 0.0
-117. Bosnia and Herzegovina : 0.0
-118. Belarus : 0.0
-119. Bahrain : 0.0
-120. Azerbaijan : 0.0
-121. Armenia : 0.0
-122. Algeria : 0.0
+1. Vietnam : 137.21
+2. Sri Lanka : 78.450
+3. Philippines : 45.263
+4. Puerto Rico : 44.796
+5. Indonesia : 39.357
+6. Colombia : 35.476
+7. Nepal : 34.391
+8. Kenya : 25.680
+9. Cuba : 22.366
+10. Ecuador : 21.288
+11. Peru : 17.712
+12. Gabon : 14.649
+13. Thailand : 13.707
+14. Singapore : 13.530
+15. Sudan : 12.750
+16. Jamaica : 10.468
+17. Trinidad and Tobago : 9.1607
+18. Senegal : 8.1279
+19. Costa Rica : 7.6310
+20. Cambodia : 7.5367
+21. Bangladesh : 7.2572
+22. Malaysia : 6.6666
+23. French Guiana : 5.8810
+24. Venezuela : 5.7827
+25. Congo : 5.7322
+26. Tanzania : 5.5264
+27. French Polynesia : 5.2696
+28. Pakistan : 5.0037
+29. Cyprus : 4.9073
+30. Nicaragua : 4.3973
+31. Madagascar : 4.0141
+32. Yemen : 3.7426
+33. Panama : 3.0420
+34. Uganda : 2.6352
+35. Oman : 1.9508
+36. Ghana : 1.8766
+37. India : 1.8295
+38. Brazil : 1.5567
+39. Australia : 1.5267
+40. Mexico : 1.5212
+41. Myanmar : 1.4760
+42. Bolivia : 1.4047
+43. Taiwan : 1.2874
+44. Guatemala : 1.2556
+45. Argentina : 1.2390
+46. Saudi Arabia : 1.0991
+47. France : 1.0747
+48. Cameroon : 1.0074
+49. Uruguay : 0.9462
+50. Ethiopia : 0.9144
+51. Burkina Faso : 0.8370
+52. Belgium : 0.6914
+53. United Kingdom : 0.6418
+54. Qatar : 0.5932
+55. Netherlands : 0.5744
+56. United States : 0.5719
+57. Austria : 0.5648
+58. Hong Kong : 0.5482
+59. Switzerland : 0.5191
+60. Portugal : 0.4695
+61. Greece : 0.3805
+62. Georgia : 0.3530
+63. Sweden : 0.3349
+64. South Africa : 0.2725
+65. Germany : 0.2542
+66. Tunisia : 0.2497
+67. Italy : 0.2274
+68. Croatia : 0.2216
+69. Finland : 0.2171
+70. Norway : 0.1933
+71. Israel : 0.1853
+72. Japan : 0.1787
+73. Canada : 0.1775
+74. Nigeria : 0.1773
+75. China : 0.1751
+76. Chile : 0.1701
+77. New Zealand : 0.1617
+78. Jordan : 0.1613
+79. Morocco : 0.1585
+80. Benin : 0.1543
+81. Spain : 0.1521
+82. Egypt : 0.1217
+83. South Korea : 0.1191
+84. Zimbabwe : 0.1010
+85. Denmark : 0.0991
+86. Czech Republic : 0.0890
+87. Romania : 0.0850
+88. Slovakia : 0.0787
+89. Serbia : 0.0653
+90. Luxembourg : 0.0565
+91. Russia : 0.0546
+92. Poland : 0.0464
+93. Ireland : 0.0452
+94. Iran : 0.0303
+95. Kuwait : 0.0249
+96. Turkey : 0.0151
+97. Zambia : 0.0
+98. Western Sahara : 0.0
+99. Wallis and Futuna : 0.0
+100. Virgin Islands (U.S.) : 0.0
+101. Virgin Islands (British) : 0.0
+102. Vatican City State : 0.0
+103. Vanuatu  : 0.0
+104. Uzbekistan : 0.0
+105. United States Minor Outlying Islands : 0.0
+106. United Arab Emirates : 0.0
+107. Ukraine : 0.0
+108. Tuvalu : 0.0
+109. Turks and Caicos Islands : 0.0
+110. Turkmenistan : 0.0
+111. Tonga : 0.0
+112. Tokelau : 0.0
+113. Togo : 0.0
+114. Timor-Leste : 0.0
+115. Tajikistan : 0.0
+116. Syrian Arab Republic : 0.0
+117. Swaziland : 0.0
+118. Suriname : 0.0
+119. South Georgia and the South Sandwich Islands : 0.0
+120. Somalia : 0.0
+121. Solomon Islands : 0.0
+122. Slovenia : 0.0
+123. Sierra Leone : 0.0
+124. Seychelles : 0.0
+125. Sao Tome and Principe : 0.0
+126. San Marino : 0.0
+127. Samoa : 0.0
+128. Saint Vincent and the Grenadines : 0.0
+129. Saint Pierre and Miquelon : 0.0
+130. Saint Lucia : 0.0
+131. Saint Kitts and Nevis : 0.0
+132. Saint Helena : 0.0
+133. Rwanda : 0.0
+134. Reunion : 0.0
+135. Paraguay : 0.0
+136. Papua New Guinea : 0.0
+137. Palestine : 0.0
+138. Palau : 0.0
+139. Northern Mariana Islands : 0.0
+140. North Korea : 0.0
+141. Norfolk Island : 0.0
+142. Niue : 0.0
+143. Niger : 0.0
+144. New Caledonia : 0.0
+145. Netherlands Antilles : 0.0
+146. Nauru : 0.0
+147. Namibia : 0.0
+148. Mozambique : 0.0
+149. Montserrat : 0.0
+150. Montenegro : 0.0
+151. Mongolia : 0.0
+152. Monaco : 0.0
+153. Moldova : 0.0
+154. Mayotte : 0.0
+155. Mauritius : 0.0
+156. Mauritania : 0.0
+157. Martinique : 0.0
+158. Marshall Islands : 0.0
+159. Malta : 0.0
+160. Mali : 0.0
+161. Maldives : 0.0
+162. Malawi : 0.0
+163. Macedonia : 0.0
+164. Macao : 0.0
+165. Lithuania : 0.0
+166. Liechtenstein : 0.0
+167. Libya : 0.0
+168. Liberia : 0.0
+169. Lesotho : 0.0
+170. Lebanon : 0.0
+171. Latvia : 0.0
+172. Laos : 0.0
+173. Kyrgyzstan : 0.0
+174. Kiribati : 0.0
+175. Kazakhstan : 0.0
+176. Ivory Coast : 0.0
+177. Iraq : 0.0
+178. Iceland : 0.0
+179. Hungary : 0.0
+180. Honduras : 0.0
+181. Haiti : 0.0
+182. Guyana : 0.0
+183. Guinea-Bissau : 0.0
+184. Guinea : 0.0
+185. Guam : 0.0
+186. Guadeloupe : 0.0
+187. Grenada : 0.0
+188. Greenland : 0.0
+189. Gibraltar : 0.0
+190. Gambia : 0.0
+191. Fiji : 0.0
+192. Federated States of Micronesia : 0.0
+193. Faroe Islands : 0.0
+194. Falkland Islands (Malvinas) : 0.0
+195. Estonia : 0.0
+196. Eritrea : 0.0
+197. Equatorial Guinea : 0.0
+198. El Salvador : 0.0
+199. Dominican Republic : 0.0
+200. Dominica : 0.0
+201. Djibouti : 0.0
+202. Democratic Republic Congo : 0.0
+203. Cook Islands : 0.0
+204. Comoros : 0.0
+205. Cocos (Keeling) Islands : 0.0
+206. Christmas Island : 0.0
+207. Chad : 0.0
+208. Central African Republic : 0.0
+209. Cayman Islands : 0.0
+210. Cape Verde : 0.0
+211. Burundi : 0.0
+212. Bulgaria : 0.0
+213. Brunei Darussalam : 0.0
+214. British Indian Ocean Territory : 0.0
+215. Bouvet Island : 0.0
+216. Botswana : 0.0
+217. Bosnia and Herzegovina : 0.0
+218. Bhutan : 0.0
+219. Bermuda : 0.0
+220. Belize : 0.0
+221. Belarus : 0.0
+222. Barbados : 0.0
+223. Bahrain : 0.0
+224. Bahamas : 0.0
+225. Azerbaijan : 0.0
+226. Aruba : 0.0
+227. Armenia : 0.0
+228. Antigua and Barbuda : 0.0
+229. Anguilla : 0.0
+230. Angola : 0.0
+231. Andorra : 0.0
+232. American Samoa : 0.0
+233. Algeria : 0.0
+234. Albania : 0.0
+235. Afghanistan : 0.0

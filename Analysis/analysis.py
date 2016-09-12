@@ -45,10 +45,10 @@ def cumulative_analysis(file_one, file_two):
     first_to_second_ratio = {}
 
     for country in first:
-        if second_sum[country] < second_total_sum/10000:
+#        if second_sum[country] < second_total_sum/10000:
 	    # If a country contributes less than .01% of the world's total research, we will exclude it from our analysis. 
 	    # Including such countries will lead to misleadingly high M scores. 
-            continue
+#            continue
         try:
             first_proportion = first_sum[country]/first_total_sum
             second_proportion = second_sum[country]/second_total_sum
@@ -71,9 +71,9 @@ def cumulative_analysis(file_one, file_two):
             print e
 
     count = 1
-    for tup in sorted(first_to_second_tuples)[::-1][:20]:
-#        print "|", count, "|", tup[1], "|", str(tup[0])[:5], "|"
-        print str(count)+".", tup[1], ":", str(tup[0])[:5]
+    for tup in sorted(first_to_second_tuples)[::-1]:
+#        print "|", count, "|", tup[1], "|", str(tup[0])[:6], "|"
+#        print str(count)+".", tup[1], ":", str(tup[0])[:6]
         count += 1
 
 def analyze_by_year(file_one, file_two):
@@ -179,15 +179,15 @@ def main():
     countries_to_analyze = ["India", "Brazil", "Germany", "Japan"]
 
 #    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json", countries_to_analyze)
-    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json", countries_to_analyze)
+#    analyze_specific_countries_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json", countries_to_analyze)
 #    analyze_specific_countries_by_year("JSON_files/bias_corrected_dengue_fever_2005_2015.json", "JSON_files/sci_mago.json", countries_to_analyze)
 
 #    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
-    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
+#    analyze_by_year("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
 #    analyze_by_year("JSON_files/bias_corrected_dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
 
 #    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
-    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
+#    cumulative_analysis("JSON_files/dengue_fever_2005_2015.json", "JSON_files/rat_2005_2015.json")
 #    cumulative_analysis("JSON_files/bias_corrected_dengue_fever_2005_2015.json", "JSON_files/sci_mago.json")
 
 main()
