@@ -43,21 +43,21 @@ To account for this potential bias, we will perform analysis under two separate 
 
 |Rank   |	  Country	      |    Multiple	    |
 |:-----:|:-------------:|:-------------:|
-| 1 | Sri Lanka | 30.97 |
-| 2 | Cambodia | 19.88 |
-| 3 | Puerto Rico | 17.75 |
-| 4 | Thailand | 14.30 |
-| 5 | Cuba | 14.08 |
-| 6 | Vietnam | 14.00 |
-| 7 | Indonesia | 13.21 |
-| 8 | Gabon | 10.10 |
-| 9 | Malaysia | 10.07 |
-| 10 | Singapore | 10.01 |
-| 11 | Colombia | 9.325 |
-| 12 | Philippines | 7.285 |
-| 13 | Trinidad and Tobago | 7.273 |
-| 14 | Jamaica | 6.983 |
-| 15 | Sudan | 5.867 |
+| 1 | French Guiana | 52.592 |
+| 2 | Nicaragua | 48.022 |
+| 3 | French Polynesia | 46.886 |
+| 4 | Martinique | 32.965 |
+| 5 | Sri Lanka | 30.972 |
+| 6 | Federated States of Micronesia | 25.989 |
+| 7 | New Caledonia | 22.041 |
+| 8 | Cambodia | 19.889 |
+| 9 | Puerto Rico | 17.754 |
+| 10 | Cayman Islands | 15.865 |
+| 11 | Thailand | 14.300 |
+| 12 | Cuba | 14.084 |
+| 13 | Vietnam | 14.004 |
+| 14 | Myanmar | 13.414 |
+| 15 | Indonesia | 13.213 |
 
 # Approach 2a  
 
@@ -81,22 +81,21 @@ To account for this potential bias, we will perform analysis under two separate 
 
 |Rank   |	  Country	      |    Multiple	    |
 |:-----:|:-------------:|:-------------:|
-| 1 | Sri Lanka | 110.4 |
-| 2 | Colombia | 57.09 |
-| 3 | Indonesia | 40.06 |
-| 4 | Cuba | 31.58 |
-| 5 | Puerto Rico | 29.49 |
-| 6 | Thailand | 21.35 |
-| 7 | Singapore | 20.11 |
-| 8 | Malaysia | 10.64 |
-| 9 | Bangladesh | 8.800 |
-| 10 | Venezuela | 8.787 |
-| 11 | Pakistan | 8.452 |
-| 12 | Ghana | 3.559 |
-| 13 | India | 3.023 |
-| 14 | Mexico | 2.580 |
-| 15 | Brazil | 2.567 |
-
+| 1 | Nicaragua | 5600.4 |
+| 2 | French Guiana | 765.50 |
+| 3 | Cambodia | 548.69 |
+| 4 | French Polynesia | 485.05 |
+| 5 | Senegal | 278.87 |
+| 6 | New Caledonia | 271.46 |
+| 7 | Vietnam | 215.03 |
+| 8 | Myanmar | 213.87 |
+| 9 | Papua New Guinea | 140.34 |
+| 10 | Gabon | 139.07 |
+| 11 | Paraguay | 130.02 |
+| 12 | Sri Lanka | 110.40 |
+| 13 | Philippines | 101.46 |
+| 14 | Bolivia | 92.876 |
+| 15 | Brunei Darussalam | 86.684 |
 
 # Approach 2b  
 
@@ -120,44 +119,46 @@ To account for this potential bias, we will perform analysis under two separate 
 
 |Rank   |	  Country	      |    Multiple	    |
 |:-----:|:-------------:|:-------------:|
-| 1 | Vietnam | 137.2 |
-| 2 | Sri Lanka | 78.45 |
-| 3 | Philippines | 45.26 |
-| 4 | Puerto Rico | 44.79 |
-| 5 | Indonesia | 39.35 |
-| 6 | Colombia | 35.47 |
-| 7 | Nepal | 34.39 |
-| 8 | Kenya | 25.68 |
-| 9 | Cuba | 22.36 |
-| 10 | Ecuador | 21.28 |
-| 11 | Peru | 17.71 |
-| 12 | Gabon | 14.64 |
-| 13 | Thailand | 13.70 |
-| 14 | Singapore | 13.53 |
-| 15 | Sudan | 12.75 |
+| 1 | Vietnam | 137.21 |
+| 2 | Sri Lanka | 78.450 |
+| 3 | Philippines | 45.263 |
+| 4 | Puerto Rico | 44.796 |
+| 5 | Indonesia | 39.357 |
+| 6 | Colombia | 35.476 |
+| 7 | Nepal | 34.391 |
+| 8 | Kenya | 25.680 |
+| 9 | Cuba | 22.366 |
+| 10 | Ecuador | 21.288 |
+| 11 | Peru | 17.712 |
+| 12 | Gabon | 14.649 |
+| 13 | Thailand | 13.707 |
+| 14 | Singapore | 13.530 |
+| 15 | Sudan | 12.750 |
 
 ## Side by Side Comparison  
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/4/49/Dengue06.png "Dengue Worldwide Distribution 2006")
 > Red: Epidemic dengue  
 > Blue: Aedes aegypti (A mosquito that can spread dengue fever, chikungunya, Zika fever and yellow fever viruses, and other diseases.)  
 
-|Rank   |	  Country  |  M (1) |  Country  |  M (2a) |  Country  |  M (2b) |
+
+|Rank   |     Country  |    M  |  Country  |    M  |  Country  |    M  |
 |:-----:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| 1 | Sri Lanka | 30.97 |Sri Lanka | 110.4 |Vietnam | 137.2 |
-| 2 | Cambodia | 19.88 |Colombia | 57.09 |Sri Lanka | 78.45 |
-| 3 | Puerto Rico | 17.75 |Indonesia | 40.06 |Philippines | 45.26 |
-| 4 | Thailand | 14.30 |Cuba | 31.58 |Puerto Rico | 44.79 |
-| 5 | Cuba | 14.08 |Puerto Rico | 29.49 |Indonesia | 39.35 |
-| 6 | Vietnam | 14.00 |Thailand | 21.35 |Colombia | 35.47 |
-| 7 | Indonesia | 13.21 |Singapore | 20.11 |Nepal | 34.39 |
-| 8 | Gabon | 10.10 |Malaysia | 10.64 |Kenya | 25.68 |
-| 9 | Malaysia | 10.07 |Bangladesh | 8.800 |Cuba | 22.36 |
-| 10 | Singapore | 10.01 |Venezuela | 8.787 |Ecuador | 21.28 |
-| 11 | Colombia | 9.325 |Pakistan | 8.452 |Peru | 17.71 |
-| 12 | Philippines | 7.285 |Ghana | 3.559 |Gabon | 14.64 |
-| 13 | Trinidad and Tobago | 7.273 |India | 3.023 |Thailand | 13.70 |
-| 14 | Jamaica | 6.983 |Mexico | 2.580 |Singapore | 13.53 |
-| 15 | Sudan | 5.867 |Brazil | 2.567 |Sudan | 12.75 |
+| 1 | French Guiana | 52.592 |Nicaragua | 5600.4 |Vietnam | 137.21 |
+| 2 | Nicaragua | 48.022 |French Guiana | 765.50 |Sri Lanka | 78.450 |
+| 3 | French Polynesia | 46.886 |Cambodia | 548.69 |Philippines | 45.263 |
+| 4 | Martinique | 32.965 |French Polynesia | 485.05 |Puerto Rico | 44.796 |
+| 5 | Sri Lanka | 30.972 |Senegal | 278.87 |Indonesia | 39.357 |
+| 6 | Federated States of Micronesia | 25.989 |New Caledonia | 271.46 |Colombia | 35.476 |
+| 7 | New Caledonia | 22.041 |Vietnam | 215.03 |Nepal | 34.391 |
+| 8 | Cambodia | 19.889 |Myanmar | 213.87 |Kenya | 25.680 |
+| 9 | Puerto Rico | 17.754 |Papua New Guinea | 140.34 |Cuba | 22.366 |
+| 10 | Cayman Islands | 15.865 |Gabon | 139.07 |Ecuador | 21.288 |
+| 11 | Thailand | 14.300 |Paraguay | 130.02 |Peru | 17.712 |
+| 12 | Cuba | 14.084 |Sri Lanka | 110.40 |Gabon | 14.649 |
+| 13 | Vietnam | 14.004 |Philippines | 101.46 |Thailand | 13.707 |
+| 14 | Myanmar | 13.414 |Bolivia | 92.876 |Singapore | 13.530 |
+| 15 | Indonesia | 13.213 |Brunei Darussalam | 86.684 |Sudan | 12.750 |
+
 
 # Discussion
 ## Comments
