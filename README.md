@@ -107,26 +107,26 @@ While it may appear that the above countries are outliers selectively chosen to 
 
 |Rank   |	  Country	      |    M	    |
 |:-----:|:-------------:|:-------------:|
-| 1 | Nicaragua | 5600.4 |
+| 1 | Nicaragua | 5600.44 |
 | 2 | French Guiana | 765.50 |
-| 3 | Cambodia | 548.69 |
-| 4 | French Polynesia | 485.05 |
+| 3 | Cambodia | 548.70 |
+| 4 | French Polynesia | 485.06 |
 | 5 | Senegal | 278.87 |
-| 6 | New Caledonia | 271.46 |
-| 7 | Vietnam | 215.03 |
+| 6 | New Caledonia | 271.47 |
+| 7 | Vietnam | 215.04 |
 | 8 | Myanmar | 213.87 |
-| 9 | Papua New Guinea | 140.34 |
-| 10 | Gabon | 139.07 |
-| 11 | Paraguay | 130.02 |
-| 12 | Sri Lanka | 110.40 |
+| 9 | Papua New Guinea | 140.35 |
+| 10 | Gabon | 139.08 |
+| 11 | Paraguay | 130.03 |
+| 12 | Sri Lanka | 110.41 |
 | 13 | Philippines | 101.46 |
-| 14 | Bolivia | 92.876 |
-| 15 | Brunei Darussalam | 86.684 |
-| 16 | Ecuador | 69.015 |
-| 17 | Mozambique | 65.013 |
-| 18 | Colombia | 57.092 |
-| 19 | Reunion | 43.342 |
-| 20 | Cayman Islands | 43.342 |   
+| 14 | Bolivia | 92.88 |
+| 15 | Brunei Darussalam | 86.68 |
+| 16 | Ecuador | 69.02 |
+| 17 | Mozambique | 65.01 |
+| 18 | Colombia | 57.09 |
+| 19 | Reunion | 43.34 |
+| 20 | Cayman Islands | 43.34 |
 
 Looking at the Wikipedia article for [Dengue Fever Outbreaks] (https://en.wikipedia.org/wiki/Dengue_fever_outbreaks), we can see that our data fits the distribution map below quite well.
 
