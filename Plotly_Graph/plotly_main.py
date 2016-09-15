@@ -99,7 +99,7 @@ def create_csv():
     '''
     Creates a csv in the style of the Plot.ly sample csv
     '''
-    
+
     country_to_country_code_dict = open_json_as_dict("country_to_country_code.json")
     M_results_from_2a = open("../Analysis/Results/approach_2a.txt", "r").read().splitlines()
 

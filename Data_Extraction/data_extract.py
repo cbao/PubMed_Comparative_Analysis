@@ -3,7 +3,7 @@ import xml
 import xml.etree.cElementTree as cElementTree
 
 def process_xml(file_name, country_dict):
-    ''' 
+    '''
     file_name = Name of XML file to process
     country_dict = object to write data to
     '''

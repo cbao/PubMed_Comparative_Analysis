@@ -46,13 +46,13 @@ def cumulative_analysis(file_one, file_two):
 
     for country in first:
 #        if second_sum[country] < second_total_sum/10000:
-	    # If a country contributes less than .01% of the world's total research, we will exclude it from our analysis. 
-	    # Including such countries will lead to misleadingly high M scores. 
+#	     If a country contributes less than .01% of the world's total research, we will exclude it from our analysis. 
+#	     Including such countries will lead to misleadingly high M scores. 
 #            continue
         try:
             first_proportion = first_sum[country]/first_total_sum
             second_proportion = second_sum[country]/second_total_sum
-            first_to_second_ratio[country] = first_proportion/second_proportion 
+            first_to_second_ratio[country] = first_proportion/second_proportion
         except KeyError:
             pass
         except ZeroDivisionError:
@@ -167,7 +167,7 @@ def analyze_specific_countries_by_year(file_one, file_two, countries):
         for specific_country in countries:
             first_proportion = first[specific_country][str(year)]/first_total_year_weight
             second_proportion = second[specific_country][str(year)]/second_total_year_weight
-            country_M = first_proportion/second_proportion 
+            country_M = first_proportion/second_proportion
             if specific_country == countries[-1]:
                 statement += "|" + str(country_M) + "|"
             else:
