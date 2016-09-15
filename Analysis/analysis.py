@@ -72,8 +72,8 @@ def cumulative_analysis(file_one, file_two):
 
     count = 1
     for tup in sorted(first_to_second_tuples)[::-1]:
-#        print "|", count, "|", tup[1], "|", str(tup[0])[:6], "|"
-#        print str(count)+".", tup[1], ":", '{0:.2f}'.format(tup[0])
+#        print "|", count, "|", tup[1], "|", "{0:.2f}".format(tup[0]), "|"
+#        print str(count)+".", tup[1], ":", "{0:.2f}".format(tup[0])
         count += 1
 
 def analyze_by_year(file_one, file_two):
