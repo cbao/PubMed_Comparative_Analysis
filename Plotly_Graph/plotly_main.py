@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import plotly
 import plotly.plotly as py
+from copy import deepcopy
 
 def open_json_as_dict(json_file):
     '''
@@ -34,28 +35,28 @@ def main():
     df = pd.read_csv("country_M_code.csv")
 
     data = [ dict(
-            type = "choropleth", 
-            locations = df["Code"], 
-            z = df["M>2"], 
-            text = df["Country"], 
-            autocolorscale = True, 
-            reversescale = False, 
+            type = "choropleth",
+            locations = df["Code"],
+            z = df["M>2"],
+            text = df["Country"],
+            autocolorscale = True,
+            reversescale = False,
             marker = dict(
                 line = dict (
-                    color = "rgb(180, 180, 180)", 
+                    color = "rgb(180, 180, 180)",
                     width = 0.5
-                ) ), 
+                ) ),
             colorbar = dict(
-                autotick = False, 
-                tickprefix = "", 
-                title = "M"), 
+                autotick = False,
+                tickprefix = "",
+                title = "M"),
           ) ]
 
     layout = dict(
         title = "Countries with M > 1",
         geo = dict(
-            showframe = False, 
-            showcoastlines = False, 
+            showframe = False,
+            showcoastlines = False,
             projection = dict(
                 type = "Mercator"
             )
@@ -103,35 +104,37 @@ def create_csv():
     country_to_country_code_dict = open_json_as_dict("country_to_country_code.json")
     M_results_from_2a = open("../Analysis/Results/approach_2a.txt", "r").read().splitlines()
 
-    countries_with_data = {}
+    country_data = deepcopy(country_to_country_code_dict)
 
     with open("country_M_code.csv", "w") as f:
-        f.write("Country,M,Code,M>2" + "\n")
+        f.write("Country,M,Code,M>1" + "\n")
 
         # Set a threshold M score for mapping
         threshold_M_score = 1.0
 
-        # Populate the countries_with_data with data
+        # Populate the country_data with data
         for line in M_results_from_2a:  # Example: "1. Sri Lanka : 110.4"
             current_line = line.split(" : ")  # ["1. Sri Lanka", "110.4"]
-            country = current_line[0].split(". ")[1]  # "Sri Lanka"
+            current_country = current_line[0].split(". ")[1]  # "Sri Lanka"
             M = current_line[1]  # "110.4""
             M_greater_than_two = "1" if float(M) > threshold_M_score else "0"  # "1"
-            country_code = country_to_country_code_dict[country]  # "LKA"
-            countries_with_data[country] = {"M":M, "M_greater_than_two":M_greater_than_two, "country_code":country_code}
 
-            if country_to_country_code_dict[country] is not None:
-                statement = ",".join([country, M, country_code, M_greater_than_two]) + "\n"  # "Sri Lanka, 110.4, LKA, 1"
-                f.write(statement)
-            else:
+            country_code = country_to_country_code_dict[current_country]  # "LKA"
+            if country_code is None: # No corresponding code to use for mapping
                 continue
 
-        # Scan through all the countries in order to have completeness when plotting
-        for current_country in country_to_country_code_dict:
-            if current_country not in countries_with_data:
-                if country_to_country_code_dict[current_country] is not None:
-                    statement = ",".join([current_country, "Unknown", country_to_country_code_dict[current_country], "0"]) + "\n"  # "Lost City, Unknown, OFATLANTIS, 0"
-                    f.write(statement)
+            country_data[current_country] = {"M": M,
+                                             "M_greater_than_two": M_greater_than_two,
+                                             "country_code": country_code}
+
+            statement = ",".join([current_country, M, country_code, M_greater_than_two]) + "\n"  # "Sri Lanka, 110.4, LKA, 1"
+            f.write(statement)
+
+        for country in country_data:
+            # Check to see if data has not been populated
+            if not isinstance(country_data[country], dict):
+                statement = ",".join([country, "Unknown", str(country_data[country]), "0"]) + "\n"  # "Atlantis, Unknown, LCA, 0"
+                f.write(statement)
 
 #map_country_to_code()
 #create_csv()
