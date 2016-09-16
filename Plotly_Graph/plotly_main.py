@@ -112,16 +112,16 @@ def create_csv():
         threshold_M_score = 1.0
 
         # Populate the countries_with_data with data
-        for line in M_results_from_2a: # Example: "1. Sri Lanka : 110.4"
-            current_line = line.split(" : ") # ["1. Sri Lanka", "110.4"]
-            country = current_line[0].split(". ")[1] # "Sri Lanka"
-            M = current_line[1] # "110.4""
-            M_greater_than_two = "1" if float(M) > threshold_M_score else "0" # "1"
-            country_code = country_to_country_code_dict[country] # "LKA"
+        for line in M_results_from_2a:  # Example: "1. Sri Lanka : 110.4"
+            current_line = line.split(" : ")  # ["1. Sri Lanka", "110.4"]
+            country = current_line[0].split(". ")[1]  # "Sri Lanka"
+            M = current_line[1]  # "110.4""
+            M_greater_than_two = "1" if float(M) > threshold_M_score else "0"  # "1"
+            country_code = country_to_country_code_dict[country]  # "LKA"
             countries_with_data[country] = {"M":M, "M_greater_than_two":M_greater_than_two, "country_code":country_code}
 
             if country_to_country_code_dict[country] is not None:
-                statement = ",".join([country, M, country_code, M_greater_than_two]) + "\n" # "Sri Lanka, 110.4, LKA, 1"
+                statement = ",".join([country, M, country_code, M_greater_than_two]) + "\n"  # "Sri Lanka, 110.4, LKA, 1"
                 f.write(statement)
             else:
                 continue
@@ -130,7 +130,7 @@ def create_csv():
         for current_country in country_to_country_code_dict:
             if current_country not in countries_with_data:
                 if country_to_country_code_dict[current_country] is not None:
-                    statement = ",".join([current_country, "Unknown", country_to_country_code_dict[current_country], "0"]) + "\n" # "Lost City, Unknown, OFATLANTIS, 0"
+                    statement = ",".join([current_country, "Unknown", country_to_country_code_dict[current_country], "0"]) + "\n"  # "Lost City, Unknown, OFATLANTIS, 0"
                     f.write(statement)
 
 #map_country_to_code()

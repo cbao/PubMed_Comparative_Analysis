@@ -10,7 +10,7 @@ def process_xml(file_name, country_dict):
     for event, elem in cElementTree.iterparse(file_name):
         if elem.tag == "PubmedArticle":
             process_element(elem, country_dict)
-            elem.clear() # It's crucial to clear the elem in order to free up memory
+            elem.clear()  # It's crucial to clear the elem in order to free up memory
 
 def process_element(elem, country_year_count_dict):
     '''
@@ -21,7 +21,7 @@ def process_element(elem, country_year_count_dict):
         article_year = elem.find("MedlineCitation").find("DateCreated").find("Year").text
         authors = elem.find("MedlineCitation").find("Article").find("AuthorList").findall("Author")
     except:
-        return # Keys don't exist - nothing to process
+        return  # Keys don't exist - nothing to process
 
     current_article_countries = []
 
@@ -30,7 +30,7 @@ def process_element(elem, country_year_count_dict):
             affiliation_info = author.find("AffiliationInfo")
             affiliation = affiliation_info.find("Affiliation").text
         except:
-            continue # Affiliation or affiliation information doesn't exist - move onto next author
+            continue  # Affiliation or affiliation information doesn't exist - move onto next author
 
         # Example Affiliation: "Department of Human Genetics and Genomic Medicine, Faculty of Medicine, University of Southampton, Southampton, UK."
 
@@ -65,7 +65,7 @@ def process_element(elem, country_year_count_dict):
     number_of_authors = float(len(current_article_countries))
 
     if number_of_authors == 0.0:
-        return # No authors found - nothing to compute.
+        return  # No authors found - nothing to compute.
     else:
         for country in current_article_countries:
             try:
