@@ -45,7 +45,7 @@ After much consideration, I simply settled on the term "Rat." Rats are one of th
 ## Addressing potential PubMed bias  
 * Since we will be working with PubMed data, it is important to assess whether there exists any bias in the articles available through PubMed. To account for this potential bias, we must perform analysis under two separate assumptions:  
 
-* 1) PubMed has little to no bias. So we can simply compare Dengue Fever data from PubMed to the [SciMago] (http://www.scimagojr.com/countryrank.php?area=2700) data on all Medicine articles.
+* 1) PubMed has little to no bias. So we can simply compare Dengue Fever data from PubMed to the [SciMago](http://www.scimagojr.com/countryrank.php?area=2700) data on all Medicine articles.
 
 * 2) PubMed does have some inherent bias:  
 
